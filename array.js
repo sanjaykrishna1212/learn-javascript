@@ -11,3 +11,4 @@ temp = friends.toString();
 console.log(temp ,"toString()");
 
 // 2.join()
+
