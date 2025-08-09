@@ -1,7 +1,7 @@
 /**
+ # STRING METHODS
  * @link https://medium.com/@akxay/javascript-string-methods-5588830241ed
- * 
- # String methods
+ * @description : length, indexOf, includes, slice, concat, toString, at (common for array and string )
  * ----------------------------
  # Basic String Methods
  * charCodeAt()

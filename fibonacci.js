@@ -11,3 +11,7 @@ function fibonacci ( input )
 
 
 console.log(fibonacci(10));
+
+function fib(n){
+    
+}

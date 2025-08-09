@@ -1,0 +1,457 @@
+1. Array
+
+# Static Methods
+Array.from(arrayLike, mapFn?)
+Array.isArray(value)
+Array.of(...items)
+
+# Instance Methods (mutate original)
+copyWithin(target, start, end?)
+fill(value, start?, end?)
+pop()
+push(...items)
+reverse()
+shift()
+sort(compareFn?)
+splice(start, deleteCount?, ...items)
+Instance Methods (return new array)
+concat(...arrays)
+filter(callback)
+flat(depth?)
+flatMap(callback)
+map(callback)
+slice(start?, end?)
+Search / Check
+every(callback)
+find(callback)
+findIndex(callback)
+findLast(callback) ✅ ES2023
+findLastIndex(callback) ✅ ES2023
+includes(value, fromIndex?)
+indexOf(value, fromIndex?)
+lastIndexOf(value, fromIndex?)
+some(callback)
+Reduce / Iterate
+forEach(callback)
+reduce(callback, initialValue?)
+reduceRight(callback, initialValue?)
+entries()
+keys()
+values()
+[Symbol.iterator]()
+--------------------------------------------------------------------------------
+2. String
+
+# Static
+String.fromCharCode(...codes)
+String.fromCodePoint(...codePoints)
+String.raw(callSite, ...substitutions)
+
+# Instance Methods
+at(index) ✅ ES2022
+charAt(index)
+charCodeAt(index)
+codePointAt(index)
+concat(...strings)
+endsWith(search, length?)
+includes(search, position?)
+indexOf(search, position?)
+lastIndexOf(search, position?)
+localeCompare(compareString)
+match(regexp)
+matchAll(regexp)
+normalize(form?)
+padEnd(targetLength, padString?)
+padStart(targetLength, padString?)
+repeat(count)
+replace(searchValue, replaceValue)
+replaceAll(searchValue, replaceValue) ✅ ES2021
+search(regexp)
+slice(start?, end?)
+split(separator, limit?)
+startsWith(search, position?)
+substring(start, end?)
+toLocaleLowerCase()
+toLocaleUpperCase()
+toLowerCase()
+toUpperCase()
+trim()
+trimEnd() / trimRight()
+trimStart() / trimLeft()
+valueOf()
+toString()
+--------------------------------------------------------------------------------
+
+3. Object
+
+# Static Methods
+Object.assign(target, ...sources)
+Object.create(proto, propertiesObject?)
+Object.defineProperty(obj, prop, descriptor)
+Object.defineProperties(obj, props)
+Object.entries(obj)
+Object.fromEntries(iterable)
+Object.freeze(obj)
+Object.getOwnPropertyDescriptor(obj, prop)
+Object.getOwnPropertyDescriptors(obj)
+Object.getOwnPropertyNames(obj)
+Object.getOwnPropertySymbols(obj)
+Object.getPrototypeOf(obj)
+Object.hasOwn(obj, prop) ✅ ES2022
+Object.is(value1, value2)
+Object.isExtensible(obj)
+Object.isFrozen(obj)
+Object.isSealed(obj)
+Object.keys(obj)
+Object.preventExtensions(obj)
+Object.seal(obj)
+Object.setPrototypeOf(obj, prototype)
+Object.values(obj)
+--------------------------------------------------------------------------------
+
+4. Math 
+
+# (All static)
+Math.abs(x)
+Math.acos(x)
+Math.acosh(x)
+Math.asin(x)
+Math.asinh(x)
+Math.atan(x)
+Math.atan2(y, x)
+Math.atanh(x)
+Math.cbrt(x)
+Math.ceil(x)
+Math.clz32(x)
+Math.cos(x)
+Math.cosh(x)
+Math.exp(x)
+Math.expm1(x)
+Math.floor(x)
+Math.fround(x)
+Math.hypot(...values)
+Math.imul(a, b)
+Math.log(x)
+Math.log10(x)
+Math.log1p(x)
+Math.log2(x)
+Math.max(...values)
+Math.min(...values)
+Math.pow(base, exponent)
+Math.random()
+Math.round(x)
+Math.sign(x)
+Math.sin(x)
+Math.sinh(x)
+Math.sqrt(x)
+Math.tan(x)
+Math.tanh(x)
+Math.trunc(x)
+--------------------------------------------------------------------------------
+
+5. Number
+
+# Static
+Number.EPSILON
+Number.MAX_SAFE_INTEGER
+Number.MAX_VALUE
+Number.MIN_SAFE_INTEGER
+Number.MIN_VALUE
+Number.NaN
+Number.NEGATIVE_INFINITY
+Number.POSITIVE_INFINITY
+Number.isFinite(value)
+Number.isInteger(value)
+Number.isNaN(value)
+Number.isSafeInteger(value)
+Number.parseFloat(string)
+Number.parseInt(string, radix)
+
+# Instance
+toExponential(fractionDigits?)
+toFixed(digits)
+toLocaleString(locales?, options?)
+toPrecision(precision)
+toString(radix?)
+valueOf()
+--------------------------------------------------------------------------------
+
+6. Boolean
+
+# Static: Boolean(value)
+
+# Instance: toString(), valueOf()
+--------------------------------------------------------------------------------
+
+7. Date
+
+# Static
+Date.now()
+Date.parse(dateString)
+Date.UTC(year, month, ...)
+
+# Instance
+getDate()
+getDay()
+getFullYear()
+getHours()
+getMilliseconds()
+getMinutes()
+getMonth()
+getSeconds()
+getTime()
+getTimezoneOffset()
+getUTCDate()
+getUTCDay()
+getUTCFullYear()
+getUTCHours()
+getUTCMilliseconds()
+getUTCMinutes()
+getUTCMonth()
+getUTCSeconds()
+setDate(day)
+setFullYear(year, month?, date?)
+setHours(hour, min?, sec?, ms?)
+setMilliseconds(ms)
+setMinutes(min, sec?, ms?)
+setMonth(month, date?)
+setSeconds(sec, ms?)
+setTime(milliseconds)
+setUTCDate(day)
+setUTCFullYear(year, month?, date?)
+setUTCHours(hour, min?, sec?, ms?)
+setUTCMilliseconds(ms)
+setUTCMinutes(min, sec?, ms?)
+setUTCMonth(month, date?)
+setUTCSeconds(sec, ms?)
+toDateString()
+toISOString()
+toJSON()
+toLocaleDateString()
+toLocaleString()
+toLocaleTimeString()
+toString()
+toTimeString()
+toUTCString()
+valueOf()
+--------------------------------------------------------------------------------
+
+8. Set
+
+# Constructor
+new Set(iterable?)
+
+# Instance Methods
+add(value)
+clear()
+delete(value)
+entries()
+forEach(callbackFn, thisArg?)
+has(value)
+keys() (same as values)
+values()
+[Symbol.iterator]() (same as values)
+
+# Properties
+size
+--------------------------------------------------------------------------------
+
+9. Map
+
+# Constructor
+new Map(iterable?)
+
+# Instance Methods
+clear()
+delete(key)
+entries()
+forEach(callbackFn, thisArg?)
+get(key)
+has(key)
+keys()
+set(key, value)
+values()
+[Symbol.iterator]() (same as entries)
+
+# Properties
+size
+--------------------------------------------------------------------------------
+
+10. WeakMap
+
+# Constructor
+new WeakMap(iterable?)
+
+# Instance Methods
+delete(key)
+get(key)
+has(key)
+set(key, value)
+--------------------------------------------------------------------------------
+
+11. WeakSet
+
+# Constructor
+new WeakSet(iterable?)
+
+# Instance Methods
+add(value)
+delete(value)
+has(value)
+--------------------------------------------------------------------------------
+
+12. RegExp
+
+# Constructor
+new RegExp(pattern, flags?)
+
+# Static
+RegExp.escape() ✅ Stage 4 coming soon (ES2025)
+RegExp.prototype[@@species]
+
+# Instance Methods
+exec(string)
+test(string)
+toString()
+
+# Properties
+dotAll (boolean)
+flags
+global
+hasIndices
+ignoreCase
+multiline
+source
+sticky
+unicode
+lastIndex
+--------------------------------------------------------------------------------
+
+13. JSON
+
+# Static Methods
+JSON.parse(text, reviver?)
+JSON.stringify(value, replacer?, space?)
+--------------------------------------------------------------------------------
+14. Promise
+
+# Constructor
+new Promise(executor)
+
+# Static Methods
+Promise.all(iterable)
+Promise.allSettled(iterable)
+Promise.any(iterable)
+Promise.race(iterable)
+Promise.resolve(value)
+Promise.reject(reason)
+
+# Instance Methods
+then(onFulfilled?, onRejected?)
+catch(onRejected?)
+finally(onFinally?)
+--------------------------------------------------------------------------------
+ 
+15. Symbol
+
+# Static
+Symbol(description?)
+Symbol.for(key)
+Symbol.keyFor(symbol)
+
+# Well-known symbols
+Symbol.asyncIterator
+Symbol.hasInstance
+Symbol.isConcatSpreadable
+Symbol.iterator
+Symbol.match
+Symbol.matchAll
+Symbol.replace
+Symbol.search
+Symbol.species
+Symbol.split
+Symbol.toPrimitive
+Symbol.toStringTag
+Symbol.unscopables
+--------------------------------------------------------------------------------
+
+16. BigInt
+
+# Static
+BigInt(value)
+BigInt.asIntN(width, bigint)
+BigInt.asUintN(width, bigint)
+(BigInt supports operators like +, -, *, /, %, **, comparisons, etc.)
+--------------------------------------------------------------------------------
+
+17. Intl (Internationalization API)
+
+# Common Constructors
+Intl.Collator
+Intl.DateTimeFormat
+Intl.DisplayNames
+Intl.DurationFormat
+Intl.ListFormat
+Intl.Locale
+Intl.NumberFormat
+Intl.PluralRules
+Intl.RelativeTimeFormat
+Intl.Segmenter
+(Each has its own format(), resolvedOptions() etc.)
+--------------------------------------------------------------------------------
+
+18. Error
+
+# Standard Error Types
+Error
+EvalError
+RangeError
+ReferenceError
+SyntaxError
+TypeError
+URIError
+AggregateError
+Properties
+message
+name
+stack
+--------------------------------------------------------------------------------
+
+19. Reflect
+
+# (All static methods)
+Reflect.apply(target, thisArg, args)
+Reflect.construct(target, args, newTarget?)
+Reflect.defineProperty(target, propertyKey, attributes)
+Reflect.deleteProperty(target, propertyKey)
+Reflect.get(target, propertyKey, receiver?)
+Reflect.getOwnPropertyDescriptor(target, propertyKey)
+Reflect.getPrototypeOf(target)
+Reflect.has(target, propertyKey)
+Reflect.isExtensible(target)
+Reflect.ownKeys(target)
+Reflect.preventExtensions(target)
+Reflect.set(target, propertyKey, value, receiver?)
+Reflect.setPrototypeOf(target, prototype)
+--------------------------------------------------------------------------------
+
+20. Proxy
+
+# Constructor
+new Proxy(target, handler)
+
+# Handler Traps
+get(target, prop, receiver)
+set(target, prop, value, receiver)
+has(target, prop)
+deleteProperty(target, prop)
+apply(target, thisArg, args)
+construct(target, args, newTarget)
+getPrototypeOf(target)
+setPrototypeOf(target, prototype)
+isExtensible(target)
+preventExtensions(target)
+getOwnPropertyDescriptor(target, prop)
+defineProperty(target, prop, descriptor)
+ownKeys(target)
+--------------------------------------------------------------------------------

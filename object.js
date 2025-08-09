@@ -1,12 +1,12 @@
 /**
  * Object Methods
- *Object.create()
- *Object.keys()
- *Object.values()
- *Object.entries()
- *Object.assign()
- *Object.freeze()
- *Object.seal()
+ * Object.create()
+ * Object.keys()
+ * Object.values()
+ * Object.entries()
+ * Object.assign()
+ * Object.freeze()
+ * Object.seal()
 */
 
 let obj =
