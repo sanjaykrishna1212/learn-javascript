@@ -30,7 +30,7 @@ console.log(Math.max(3, 7, 1)); // 7
  * 5. Math.min()
  * @description Rounds down to the nearest integer.
  */
-console.log(Math.min(3, 7, 1)); // 1rs
+console.log(Math.min(3, 7, 1)); // 1
 
 /**
  * 6. Math.random()

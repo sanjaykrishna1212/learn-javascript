@@ -38,7 +38,7 @@ console.log(Number.isSafeInteger(Number.MAX_SAFE_INTEGER));//true
 
 
 console.log(long.toFixed(1));//12133243525.2
-console.log(int.toPrecision(1));//1e+1
+console.log(float.toPrecision(3));//12.3
 console.log(int.toExponential());//1.2e+1
 console.log(int.toLocaleString());//12 (string)
 console.log(int.toString());//12 (string)
